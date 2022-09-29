@@ -1,0 +1,11 @@
+﻿@using Entity.Models;
+@model IList<Profile>
+@{
+    Layout = null;
+}
+<select class="select form-control" id="FkprofileId">
+    @foreach (var item in Model)
+    {
+        <option value="@item.Id">@item.FirstName - @item.LastName</option>
+    }
+</select>

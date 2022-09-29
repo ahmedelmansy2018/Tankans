@@ -1,0 +1,147 @@
+﻿.Legal {
+    left: 26%;
+    font-size: 30px;
+    font-family: auto;
+    border-radius: 18%;
+    text-align: center;
+    color: #0e9bda;
+    font-weight: bold;
+}
+
+.demo {
+    margin-top: 9px;
+    left: 26%;
+    font-size: 31px;
+    font-family: auto;
+    border-radius: 18%;
+    text-align: center;
+    color: #0e9bda;
+    font-weight: bold;
+}
+
+
+
+ul {
+    list-style: none;
+    display: inline-block;
+}
+
+li {
+    height: 164px;
+    width: 176px;
+    margin: 5px;
+    background-color: #90b6dd9e;
+    padding: 31px;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    opacity: 0.8;
+    transition: background-color 1s, margin-top 1s, border-bottom 1s;
+}
+
+
+    li:hover {
+        cursor: pointer;
+        margin-top: -5px;
+        background-color: #6c9ee0;
+        opacity: 0.9;
+        border-bottom: 10px white solid;
+        border-color: #773355;
+        transition: background-color 0.5s, margin-top 0.5s, border-bottom 0.5s;
+    }
+
+        li:hover > h1 {
+            color: white;
+            transition: color 1s;
+        }
+
+        li:hover > h4 {
+            color: white;
+            transition: color 1s;
+        }
+
+        li:hover > .fa {
+            color: white;
+            -ms-transform: rotate(360deg); /* IE 9 */
+            -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+            transform: rotate(360deg);
+            border: 5px #773355 solid;
+            padding: 5px;
+        }
+
+.all {
+    overflow-x: hidden;
+}
+
+.fa {
+    color: #21aff5;
+    font-size: 50px;
+    margin-top: -7px;
+    transition: color 1s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+.glyphicon {
+    font-size: 50px;
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 5px #338899 solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 800ms ease-in-out;
+}
+
+    .glyphicon:hover {
+        -ms-transform: rotate(360deg); /* IE 9 */
+        -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+        transform: rotate(360deg);
+        border: 10px #773355 solid;
+        padding: 15px;
+    }
+
+h1 {
+    margin-top: 11px;
+    color: #156a8c;
+    font-weight: bold;
+    transition: color 1s;
+    font-size: 15px;
+}
+
+h4 {
+    transition: color 1s;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+#signout {
+    position: fixed;
+    top: 70px;
+    left: 12px;
+    font-size: 29px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+    #signout:hover {
+        color: white;
+    }
+
+.row {
+    margin-top: 100px;
+}

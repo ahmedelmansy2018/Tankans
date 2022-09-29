@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "Profile Data";
+}
+
+<div id="MainData">
+</div>
+<div class="modal fade" id="AddProfile" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title" id="ProfileData">ADD New Profile</h5>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="Id">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="FirstName" class="col-form-label">First Name</label>
+                            <input type="text" tabindex="1" class="form-control" maxlength="50" id="FirstName">
+                            <label class="mandatory">*</label>
+                            <label id="FirstNameError" class="mandatoryField hide">Mandatory Field</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="LastName" class="col-form-label">Last Name</label>
+                            <input type="text" tabindex="2" class="form-control" maxlength="50" id="LastName">
+                            <label class="mandatory">*</label>
+                            <label id="LastNameError" class="mandatoryField hide">Mandatory Field</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="Phone" class="col-form-label">Phone Number</label>
+                            <input tabindex="3" type="number" class="form-control" maxlength="13" id="Phone">
+                            <label class="mandatory">*</label>
+                            <label id="PhoneError" class="mandatoryField hide">Mandatory Field</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="Email" class="col-form-label">Email</label>
+                            <input type="text" tabindex="4" class="form-control" maxlength="50" id="Email">
+                            <label class="mandatory">*</label>
+                            <label id="EmailError" class="mandatoryField hide">Mandatory Field</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="DateBirth" class="col-form-label">Birth Date</label>
+                            <input type="date" class="form-control Date" id="DateBirth" @*value="@DateTime.Now.ToString("yyyy-MM-dd")"*@ tabindex="5">
+                            <label class="mandatory">*</label>
+                            <label id="DateBirthError" class="mandatoryField hide">mandatory Field</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="text-center">
+                    <button type="button"  class="btn btn-success" onclick="SaveProfile()">Save</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="DeleteProfile" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title">Delet Profile</h5>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="hidden" id="DeleteProfileID" />
+                    <label for="DeleteFirstName" class="col-form-label">Name</label> :
+                    <span id="DeleteProfileName" style="color:blue;font-weight:bold"></span>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="text-center">
+                    <button type="button" tabindex="6"class="btn btn-danger" onclick="ConfirmDelete()">Delete</button>
+                    <button type="button" tabindex="7"class="btn btn-info" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Content/js/jquery1.12.4.min.js"></script>
+<script src="~/Content/js/Profile.js"></script>
+

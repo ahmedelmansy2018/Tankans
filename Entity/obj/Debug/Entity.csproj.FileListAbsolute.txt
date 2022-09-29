@@ -1,0 +1,5 @@
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\Entity\bin\Debug\Entity.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\Entity\bin\Debug\Entity.pdb
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\Entity\obj\Debug\Entity.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\Entity\obj\Debug\Entity.pdb

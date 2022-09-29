@@ -1,0 +1,35 @@
+﻿.mandatory {
+    color: red;
+    position: absolute;
+    top: 30px;
+    right: 8px;
+    font-size: 22px;
+}
+
+.mandatoryField {
+    font-size: 10px;
+    color: red;
+    position: absolute;
+    top: 60px;
+    display: block; /*For Execution progress popup*/
+}
+
+    .mandatoryField.PrescrptionError {
+        top: 3px;
+        right: 47px;
+    }
+
+.background {
+    background-color: #efefef;
+    padding: 28px;
+    border: 2px solid #d6d5d5;
+}
+
+table, th {
+    text-align: center;
+}
+
+    table thead {
+        background-color: #337ab7;
+        color: white;
+    }

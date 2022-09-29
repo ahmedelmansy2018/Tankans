@@ -1,0 +1,11 @@
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\BLL\bin\Debug\BLL.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\BLL\bin\Debug\BLL.pdb
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\BLL\bin\Debug\DAL.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\BLL\bin\Debug\Entity.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\BLL\bin\Debug\DAL.pdb
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\BLL\bin\Debug\Entity.pdb
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\BLL\obj\Debug\BLL.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\BLL\obj\Debug\BLL.pdb

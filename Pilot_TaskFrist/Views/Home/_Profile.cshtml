@@ -1,0 +1,59 @@
+﻿@using Entity.Models;
+@model IList<Profile>
+@{
+    Layout = null;
+}
+
+<p>
+    <span class="btn btn btn-success" data-toggle="tooltip" data-placement="top" title="btn_add" onclick="AddProfile()"><i class="fas fa-plus" data-translate="btn_add"></i></span>
+</p>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                First name
+            </th>
+            <th>
+                Last name
+            </th>
+            <th>
+                Phone
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Birth Date
+            </th>
+            <th>
+                operations
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Profile in Model)
+        {
+            <tr id="tr-@Profile.Id">
+                <td>
+                    @Profile.FirstName
+                </td>
+                <td>
+                    @Profile.LastName
+                </td>
+                <td>
+                    @Profile.Phone
+                </td>
+                <td>
+                    @Profile.Email
+                </td>
+                <td>
+                    @Profile.DateBirth.ToString("yyyy-MM-dd")
+                </td>
+                <td>
+                    <span class="btn btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="btn_edit" onclick="EditProfileData('@Profile.Id')"><i class="fas fa-edit"></i></span>
+                    <span class="btn btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="btn_delete" onclick="DeleteProfile('@Profile.Id', '@Profile.FirstName', '@Profile.LastName')"><i class="far fa-trash-alt"></i></span>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

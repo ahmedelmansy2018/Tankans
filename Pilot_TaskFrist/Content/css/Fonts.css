@@ -1,0 +1,93 @@
+/*
+ * Droid Arabic Kufi (Arabic) http://www.google.com/fonts/earlyaccess
+ */
+/*@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/DroidKufi-Regular.eot);
+    src: url(../fonts/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'), url(DroidKufi-Regular.woff2) format('woff2'), url(DroidKufi-Regular.woff) format('woff'), url(DroidKufi-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/DroidKufi-Bold.eot);
+    src: url(../fonts/DroidKufi-Bold.eot?#iefix) format('embedded-opentype'), url(DroidKufi-Bold.woff2) format('woff2'), url(DroidKufi-Bold.woff) format('woff'), url(DroidKufi-Bold.ttf) format('truetype');
+}*/
+
+
+
+@font-face {
+    font-family: 'droidkufi-bold';
+    src: url('../fonts/droidkufi-bold.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'droidkufi-bold';
+    src: url('../fonts/droidkufi-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'droidkufi-bold';
+    src: url('../fonts/droidkufi-bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'droidkufi-regular';
+    src: url('../fonts/droidkufi-regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'droidkufi-regular';
+    src: url('../fonts/droidkufi-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'droidkufi-regular';
+    src: url('../fonts/droidkufi-regular.woff2') format('woff2');
+}
+
+
+
+@font-face {
+    font-family: 'tajawal-black';
+    src: url('../fonts/tajawal-black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'tajawal-bold';
+    src: url('../fonts/tajawal-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'tajawal-extrabold';
+    src: url('../fonts/tajawal-extrabold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'tajawal-extralight';
+    src: url('../fonts/tajawal-extralight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'tajawal-light';
+    src: url('../fonts/tajawal-light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'tajawal-medium';
+    src: url('../fonts/tajawal-medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'tajawal-regular';
+    src: url('../fonts/tajawal-regular.ttf') format('truetype');
+}
+
+
+div, select, .select2-results__options {
+    font-family: tajawal-regular !important;
+    font-family: tajawal-bold !important
+}

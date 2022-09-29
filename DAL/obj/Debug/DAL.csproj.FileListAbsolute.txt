@@ -1,0 +1,17 @@
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\bin\Debug\DAL.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\bin\Debug\DAL.pdb
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\bin\Debug\Entity.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\bin\Debug\System.Security.AccessControl.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\bin\Debug\System.Security.Permissions.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\bin\Debug\Entity.pdb
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\bin\Debug\System.Security.AccessControl.xml
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\bin\Debug\System.Security.Permissions.xml
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\obj\Debug\DAL.dll
+C:\Users\ahmed\source\repos\Pilot_TaskFrist\DAL\obj\Debug\DAL.pdb

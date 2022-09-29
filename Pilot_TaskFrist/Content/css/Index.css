@@ -1,0 +1,51 @@
+.container {
+    margin-top: 80px;
+}
+
+.text-center {
+    margin-bottom: 30px;
+}
+
+    .text-center:hover {
+        cursor: pointer;
+    }
+
+        .text-center:hover > h1 {
+            transition: color 1s;
+            background-color: white;
+            color: #29285e;
+        }
+
+        .text-center:hover > h4 {
+            color: white;
+            transition: color 1s;
+        }
+
+
+
+.fa {
+    color: #00b1b9;
+    font-size: 86px;
+    margin-top: -7px;
+    transition: color 1s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+h1 {
+    margin-top: 22px;
+    color: white;
+    font-weight: bold;
+    transition: color 1s;
+    font-size: 16px;
+    background-color: #29285e;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+.link {
+    width: 100%;
+    margin-bottom: 3px;
+}

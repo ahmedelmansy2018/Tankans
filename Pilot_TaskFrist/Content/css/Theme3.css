@@ -1,0 +1,109 @@
+﻿.bg-blue {
+    background-color: #668dd4;
+}
+
+.bg-green {
+    background-color: #668dd4;
+}
+
+.bg-orange {
+    background-color: #668dd4;
+}
+
+.bg-red {
+    background-color: #668dd4;
+}
+
+.breadcrumb {
+    background-color: #668dd4;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #668dd4;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    border-color: #668dd4;
+}
+
+.slide .Maintitle a {
+    color: #668dd4;
+}
+
+    .slide .Maintitle a:hover {
+        background-color: #668dd4;
+    }
+
+.slide .Header {
+    background-color: #668dd4;
+}
+
+.slide ul {
+    color: #668dd4;
+}
+
+    .slide ul li {
+        color: #668dd4;
+    }
+
+.navbar-fixed-bottom {
+    background-color: #668dd4 !important;
+}
+
+.bg-blue {
+    background-color: #00c0ef;
+    background-color: #668dd4;
+}
+
+.bg-green {
+    background-color: #00a65a;
+    background-color: #668dd4;
+}
+
+.bg-orange {
+    background-color: #f39c12;
+    background-color: #668dd4;
+}
+
+.bg-red {
+    background-color: #d9534f;
+    background-color: #668dd4;
+}
+
+.slide ul li:hover {
+    background-color: #31c0c7;
+    color: white;
+}
+
+.LANG span {
+    color: #668dd4;
+}
+
+.glyphicon-align-justify {
+    color: #668dd4;
+}
+
+.active {
+    background-color: #31c0c7;
+}
+
+table thead {
+    background-color: #668dd4;
+}
+
+button.dt-button, div.dt-button, a.dt-button {
+    /*background-color: #668dd4 !important;*/
+}
+
+div.dt-button-collection {
+    background-color: #18595d !important;
+}
+
+    div.dt-button-collection button.dt-button:active:not(.disabled),
+    div.dt-button-collection button.dt-button.active:not(.disabled),
+    div.dt-button-collection div.dt-button:active:not(.disabled),
+    div.dt-button-collection div.dt-button.active:not(.disabled),
+    div.dt-button-collection a.dt-button:active:not(.disabled),
+    div.dt-button-collection a.dt-button.active:not(.disabled) {
+        background-color: #668dd4 !important;
+    }

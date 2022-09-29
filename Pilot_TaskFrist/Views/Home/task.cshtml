@@ -1,0 +1,107 @@
+﻿
+@{
+    ViewBag.Title = "task";
+}
+<link href="~/Content/css/bootstrap-timepicker.css" rel="stylesheet" />
+<div id="MainData">
+</div>
+<div class="modal fade" id="Addtask" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title" id="taskData">ADD New task</h5>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="Id">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="TaskName"  class="col-form-label">Task Name</label>
+                            <input type="text"  class="form-control" maxlength="50" id="TaskName">
+                            <label class="mandatory">*</label>
+                            <label id="TaskNameError" class="mandatoryField hide">Mandatory Field</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="StartTime" class="col-form-label">Start Time </label>
+                            <div class="input-group bootstrap-timepicker">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                <input  id="StartTime" maxlength="8" type="text" value="@DateTime.Now.ToString("hh:mm tt")" class="form-control Time input-small" />
+                            </div>
+                            <label class="mandatory">*</label>
+                            <label id="StartTimeError" class="mandatoryField hide"> mandatoryField</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div id="profileId" class="form-group">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <select class="select form-control" id="Status">
+                                <option value="1">Padding</option>
+                                <option value="2">Processing</option>
+                                <option value="3">Completed</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="TaskDescription" class="col-form-label">Task Description </label>
+                            <textarea rows="3" class="form-control" maxlength="500" id="TaskDescription"></textarea>
+                            <label class="mandatory">*</label>
+                            <label id="TaskDescriptionError" class="mandatoryField hide">Mandatory Field</label>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" onclick="Savetask()">Save</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Deletetask" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title">Delet task</h5>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="hidden" id="DeletetaskID" />
+                    <label for="DeleteFirstName" class="col-form-label">Name</label> :
+                    <span id="DeletetaskName" style="color:blue;font-weight:bold"></span>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="text-center">
+                    <button type="button" class="btn btn-danger" onclick="ConfirmDelete()">Delete</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Content/js/jquery1.12.4.min.js"></script>
+<script src="~/Content/js/bootstrap-timepicker.min.js"></script>
+<script src="~/Content/js/Task.js"></script>
+<script type="text/javascript">
+    $('#StartTime').timepicker();
+</script>

@@ -1,0 +1,72 @@
+﻿@using Entity.Models;
+@model IList<task>
+@{
+    Layout = null;
+}
+
+<p>
+    <span class="btn btn btn-success" data-toggle="tooltip" data-placement="top" title="btn_add" onclick="Addtask()"><i class="fas fa-plus" data-translate="btn_add"></i></span>
+</p>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                Task Name
+            </th>
+            <th>
+                Task Description
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Profile Name
+            </th>
+            <th>
+                Start Time  
+            </th>
+            <th>
+                operations
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var task in Model)
+        {
+            var Status = "";
+            var Profile = BLL.BLLProfile.Get(task.FkprofileId);
+            switch (task.Status)
+            {
+                case 1:
+                    Status = "Padding"; break;
+                case 2:
+                    Status = "Processing"; break;
+                case 3:
+                    Status = "Completed"; break;
+                default:
+                    break;
+            }
+            <tr id="tr-@task.Id">
+                <td>
+                    @task.TaskName
+                </td>
+                <td>
+                    @task.TaskDescription
+                </td>
+                <td>
+                    @Status
+                </td>
+                <td>
+                    @Profile.FirstName @Profile.LastName
+                </td>
+                <td>
+                    @task.StartTime.ToString("hh:mm tt")
+                </td>
+                <td>
+                    <span class="btn btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="btn_edit" onclick="EdittaskData('@task.Id')"><i class="fas fa-edit"></i></span>
+                    <span class="btn btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="btn_delete" onclick="Deletetask('@task.Id', '@task.TaskName')"><i class="far fa-trash-alt"></i></span>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
